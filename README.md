@@ -1,0 +1,1 @@
+Em resumo, este projeto demonstra a aplicação prática de conceitos fundamentais de desenvolvimento web, como consumo de APIs, manipulação do DOM e interatividade com o usuário. A integração entre HTML, CSS e JavaScript possibilitou a criação de uma ferramenta útil e didática, servindo como base para projetos mais complexos e integrados no futuro.
