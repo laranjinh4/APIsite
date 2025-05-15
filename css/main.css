@@ -1,0 +1,139 @@
+:root {
+    --bg-color: #ffe59f;
+    --primary: #e6ac37;
+    --secondary: #f1ce65;
+    --text-dark: #a16e1b;
+    --text-light: #ffffff;
+    --card-bg: #ffffffcc;
+  }
+
+  * {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: var(--bg-color);
+    color: var(--text-dark);
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Sol no fundo */
+  .background-sun {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+    opacity: 0.1;
+  }
+
+  /* Caixa centralizada */
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    width: 90%;
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+    backdrop-filter: blur(10px);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary);
+    font-weight: 600;
+  }
+
+  .input-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s ease;
+    font-size: 1rem;
+  }
+
+  input[type="text"]:focus {
+    border-color: var(--secondary);
+  }
+
+  button {
+    padding: 12px 20px;
+    background: var(--primary);
+    color: var(--text-light);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+
+  button:hover {
+    background: var(--secondary);
+  }
+
+  .loading {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--primary);
+    animation: pulse 1.5s infinite;
+    font-size: 1rem;
+  }
+
+  .results {
+    margin-top: 30px;
+    display: grid;
+    gap: 15px;
+  }
+
+  .result-card {
+    background: #fff;
+    padding: 18px;
+    border-left: 6px solid var(--primary);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .result-card strong {
+    color: var(--text-dark);
+  }
+
+  @keyframes pulse {
+    0% { opacity: 0.4; }
+    50% { opacity: 1; }
+    100% { opacity: 0.4; }
+  }
+
+  /* Fundo com vegetação verde */
+  .background-green {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="https://th.bing.com/th/id/OIP.mlgtkKS_f3UnGwxlbf9RQQHaDN?cb=iwc1&rs=1&pid=ImgDetMain" viewBox="0 0 1440 320"><path fill="%234CAF50" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,213.3C384,203,480,149,576,144C672,139,768,181,864,186.7C960,192,1056,160,1152,165.3C1248,171,1344,213,1392,234.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') repeat-x;
+    background-size: contain;
+    z-index: 0;
+  }
+

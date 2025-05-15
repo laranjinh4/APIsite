@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clima Verde - Várias Cidades</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Fonte elegante do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins :wght@400;600&display=swap" rel="stylesheet">
+  <script src="js/script.js" type="text/javascript" defer></script>
+  
+</head>
+<body>
+
+  <!-- Desenho do sol -->
+  <div class="background-sun">
+    <svg viewBox="0 0 64 64" xmlns="background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%234CAF50" d="M0,160L48,176..."/></svg>') repeat-x;">
+
+    </svg>
+  </div>
+ 
+  <!-- Container centralizado -->
+  <div class="container">
+    <h1>🌤️ Clima</h1>
+    <div class="input-group">
+      <input type="text" id="cidade" placeholder="Digite uma cidade..." />
+      <button onclick="buscarClima()">Buscar</button>
+    </div>
+    <div id="carregando" class="loading" style="display:none;">Carregando dados...</div>
+    <div class="results" id="resultados"></div>
+  </div>
+
+  <!-- Vegetação verde no rodapé -->
+  <div class="background-green"></div>
+
+  
+</body>
+</html>
